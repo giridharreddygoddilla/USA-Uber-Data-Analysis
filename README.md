@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Images/Git%20Uber%20Logo.png" alt="Git Uber logo" width="280"/>
+<img src="Images/Git%20Uber%20Logo.png" alt="Git Uber logo" width="240"/>
 
 <img src="Images/Uber%20Car%20Logo.png" alt="Uber car logo" width="240"/>
 
