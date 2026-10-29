@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="Images/Uber%20Car%20Logo.png" alt="Uber car logo" width="90"/>
+<img src="Images/Uber%20Logo.png" alt="Uber logo" width="80"/>
+
+<img src="Images/Uber%20Car%20Logo.png" alt="Uber car logo" width="240"/>
 
 # 🚖 Uber Trip Analysis — Power BI Dashboard & Business Insights
 
@@ -121,6 +123,7 @@ USA-Uber-Data-Analysis/
 │   ├── Overview_Analysis_Dashboard.png
 │   ├── Time_Analysis_Dashboard.png
 │   ├── Details_Dashboard.png
+│   ├── Uber Logo.png
 │   ├── Uber Car Logo.png
 │   ├── UberX.png
 │   ├── UberXL.png
