@@ -1,116 +1,158 @@
-# 🚗 Uber Trip Analysis — Power BI Dashboard & Booking Insights
+<div align="center">
 
-*Analyzing 103K+ Uber bookings to understand booking trends, trip distances, revenue, payment preferences, and vehicle performance through an interactive Power BI dashboard.*
+<img src="Images/Uber%20Car%20Logo.png" alt="Uber car logo" width="90"/>
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-F2C811?logo=powerbi&logoColor=black)
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-EDA-blue)
-![Data Visualization](https://img.shields.io/badge/Data%20Visualization-Dashboard-orange)
+# 🚖 Uber Trip Analysis — Power BI Dashboard & Business Insights
+
+*Analysing 103K+ Uber bookings to uncover booking trends, vehicle performance, payment preferences, and location-based demand using interactive Power BI dashboards.*
+
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Measures-0A66C2?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Excel-Data-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Period](https://img.shields.io/badge/Period-June%202024-black?style=for-the-badge)
+
+</div>
 
 ## 1. 📌 Project Overview
 
-Analyzed Uber trip data for June 2024 to evaluate booking performance, booking amounts, trip patterns, payment methods, and vehicle categories using an interactive dashboard.
+This project analyses Uber trip data for **June 2024** using Power BI to understand booking performance, trip distances, vehicle categories, payment preferences, and location-based demand.
 
-## 2. 🎯 Business Questions & Objectives
+The report transforms trip-level data into an interactive business intelligence dashboard, helping users compare performance across time periods, vehicle types, payment methods, and pickup locations.
 
-- How do booking volumes and booking amounts vary over time?
-- Which payment methods and trip types contribute most to booking value?
-- Which vehicle categories generate the most bookings and revenue?
-- What are the most frequent pickup and drop-off locations?
-- How do trip distance and duration vary across bookings?
+## 2. 🎯 Business Questions
+
+- How do booking volumes change throughout the day and across weekdays?
+- Which vehicle types contribute the most bookings, booking amounts, and trip distances?
+- Which payment methods account for the largest share of booking amounts?
+- Which pickup locations record the highest booking activity?
+- How can these patterns support further investigation into demand and operational planning?
 
 ## 3. 📊 Key Findings & Insights
 
-- **Total Bookings:** 103.73K bookings.
-- **Total Booking Amount:** $1.55M.
-- **Total Trip Distance:** 349K miles.
-- **Average Trip Distance:** 3 miles.
-- **Average Booking Amount:** $14.98.
-- **Average Trip Time:** 16 minutes.
-- **Vehicle Performance:** UberX led with approximately 38.7K bookings and $583.9K in booking value.
-- **Payment Preferences:** Uber Pay accounted for approximately 70.7% of booking value.
-- **Trip Type:** Day trips contributed 62.75% of booking value, compared with 37.25% for night trips.
+### Headline Metrics
+
+| 🚖 Total Bookings | 💵 Booking Amount | 🛣️ Total Distance | 📏 Avg Distance | 🏷️ Avg Booking Amount | ⏱️ Avg Trip Time |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **103,728** | **~$1.55M** | **348,934 miles** | **~3 miles** | **$14.98** | **16 min** |
+
+### Key Insights
+
+- **103,728 total bookings** and approximately **$1.55M in booking amount**.
+- **348,934 miles** in total trip distance, with an average trip distance of approximately **3 miles**.
+- **$14.98 average booking amount** and **16 minutes average trip time**.
+- **UberX** led the displayed vehicle categories with **38,744 bookings**, approximately **$583.9K in booking amount**, and **131,496 miles** in trip distance.
+- **Daytime trips** accounted for approximately **62.75% of the displayed booking amount**, compared with 37.25% for night time trips.
+- **Penn Station/Madison Sq West** and **Upper East Side North** were among the leading pickup locations, each showing approximately **4.5K bookings**.
+
+*Figures reflect the published dashboard and depend on the underlying DAX measures and active filters.*
 
 ## 4. 💡 Business Recommendations
 
-- Monitor daily booking trends to identify fluctuations in demand.
-- Evaluate vehicle-category performance to support fleet planning.
-- Analyze pickup and drop-off hotspots to understand booking concentration.
-- Compare day and night bookings to identify differences in trip activity.
-- Track payment-method usage to understand customer payment preferences.
+- **Demand planning:** Investigate peak booking hours and weekday patterns to assess whether driver availability aligns with demand.
+- **Vehicle allocation:** Examine UberX's higher booking volume when reviewing vehicle availability and category-level demand.
+- **Location strategy:** Explore high-volume pickup areas to identify recurring demand patterns.
+- **Payment monitoring:** Track payment-method usage and booking amounts over time to identify meaningful changes.
+- **Data quality:** Review unusually long trips and extreme values before using distance metrics for operational decisions.
 
-## 5. 🖼️ Dashboard Preview & Key Visuals
+*These are opportunities for further investigation, not claims of proven business impact.*
 
-### Uber Trip Overview Dashboard
+## 5. 🖼️ Dashboard Preview
 
-![Uber Trip Analysis Dashboard](Images/uber-trip-overview.png)
+### Overview Analysis
 
-The interactive dashboard includes:
+![Overview Analysis Dashboard](Images/Overview_Analysis_Dashboard.png)
 
-- **KPI Summary:** Bookings, booking amount, trip distance, average distance, average booking amount, and trip time.
-- **Booking Trends:** Daily booking volumes across the selected period.
-- **Payment Analysis:** Booking value by payment method.
-- **Trip Type Analysis:** Day versus night booking value.
-- **Vehicle Analysis:** Bookings, booking amount, average booking amount, and distance by vehicle.
-- **Location Analysis:** Frequent pickup and drop-off points, location-level bookings, and preferred vehicles.
+Summarises booking KPIs, payment preferences, daytime versus nighttime performance, daily booking trends, vehicle comparisons, and pickup/drop-off locations.
+
+### Time Analysis
+
+![Time Analysis Dashboard](Images/Time_Analysis_Dashboard.png)
+
+Explores booking activity by pickup hour and weekday, helping users compare temporal patterns and identify periods for further investigation.
+
+### Trip Details
+
+![Trip Details Dashboard](Images/Details_Dashboard.png)
+
+Provides a detailed view of individual trip records, including vehicle type, payment type, passenger count, trip distance, booking amount, and pickup/drop-off locations.
 
 ## 6. 🛠️ Tools & Technical Skills
 
-- **Microsoft Power BI** — dashboard development and interactive reporting
-- **Power Query** — data preparation and transformation, if used
-- **DAX** — KPI calculations and measures, if used
-- **Data Analysis & EDA** — identifying booking and trip patterns
-- **Data Visualization** — KPI cards, trend charts, donut charts, and bar charts
-- **Business Analysis** — interpreting booking and vehicle performance
+- **Microsoft Power BI** — interactive reports, KPI cards, filters, and dashboard navigation.
+- **DAX** — calculations for booking volume, booking amounts, distances, and average metrics.
+- **Data Visualisation** — KPI cards, donut charts, trend charts, bar charts, and heatmaps.
+- **Exploratory Data Analysis** — comparisons across time, vehicles, payments, and locations.
+- **Business Intelligence** — translating observed patterns into business questions and recommendations.
+- **Data Validation** — checking dashboard figures against the underlying dataset.
 
-## 7. ⚙️ Methodology & Analytical Workflow
+## 7. ⚙️ Methodology & Workflow
 
-1. Reviewed the trip dataset and its available fields.
-2. Prepared and validated the data for analysis.
-3. Developed KPIs for bookings, booking amounts, distances, and trip duration.
-4. Analyzed trends by day, payment method, trip type, vehicle, and location.
-5. Designed an interactive dashboard to present key metrics and comparisons.
-6. Interpreted the findings and identified opportunities for further investigation.
+1. **Data inspection:** Reviewed the available trip fields and their suitability for analysis.
+2. **Data preparation:** Prepared the source data and relevant analytical fields used in the report.
+3. **KPI analysis:** Examined bookings, booking amounts, trip distances, and average metrics.
+4. **Comparative analysis:** Evaluated results by vehicle type, payment method, time, and pickup location.
+5. **Dashboard development:** Built three interactive Power BI pages for overview reporting, time analysis, and trip-level details.
+6. **Validation and interpretation:** Reviewed displayed metrics and identified patterns for further investigation.
 
 ## 8. 📂 Dataset Overview
 
-| Attribute | Details |
-|---|---|
-| Analysis Period | 1–30 June 2024 |
-| Total Bookings | 103.73K |
-| Total Booking Amount | $1.55M |
-| Total Trip Distance | 349K miles |
-| Key Dimensions | Date, city, payment type, trip type, vehicle, pickup and drop-off location |
-| Main Metrics | Bookings, booking amount, trip distance, average booking amount, trip time |
-
-*Update the dataset filename, record count, and column details after verifying them against the source file.*
+| Attribute                  | Details                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Dataset                    | Uber trip data supplied with the project                                                                                    |
+| Reporting period           | June 2024                                                                                                                   |
+| Total bookings shown       | 103,728                                                                                                                     |
+| Total booking amount shown | Approximately $1.55M                                                                                                        |
+| Total trip distance shown  | Approximately 348,934 miles                                                                                                 |
+| Key fields                 | Pickup date, vehicle type, payment type, passenger count, trip distance, booking amount, pickup location, drop-off location |
+| Analysis tool              | Microsoft Power BI                                                                                                          |
 
 ## 9. 📁 Repository Structure
 
 ```text
-Uber Trip Analysis/
+USA-Uber-Data-Analysis/
+├── Business Problem/
+│   └── Problem Statement.docx
 ├── Data/
-│   └── uber_trip_data.csv
-├── Power BI Dashboard/
-│   └── Uber Trip Analysis.pbix
+│   ├── Location Table.xlsx
+│   └── Uber Trip Details.xlsx
+├── Data Analysis and Dashboard/
+│   └── NewYork Uber Trip Data Analysis.pbix
 ├── Images/
-│   └── uber-trip-overview.png
+│   ├── Overview_Analysis_Dashboard.png
+│   ├── Time_Analysis_Dashboard.png
+│   ├── Details_Dashboard.png
+│   ├── Uber Car Logo.png
+│   ├── UberX.png
+│   ├── UberXL.png
+│   ├── comfort.png
+│   ├── suv.png
+│   ├── green.png
+│   ├── sales.png
+│   ├── money.png
+│   ├── distance.png
+│   ├── avg_distance.png
+│   ├── clock.png
+│   ├── Home.png
+│   ├── Data.png
+│   ├── Info.png
+│   ├── Bookmark.png
+│   └── Refresh.png
+├── LICENSE
 └── README.md
 ```
 
-*Adjust the folder and filenames to match your final GitHub repository.*
+## 10. 🚀 How to Run / Explore
 
-## 10. 🚀 How to Run / Explore the Project
-
-1. Clone or download the repository.
-2. Open `Power BI Dashboard/Uber Trip Analysis.pbix` using Power BI Desktop.
-3. Explore the dashboard pages and visualizations.
-4. Use the date and city filters to investigate booking performance.
-5. Select different metrics to compare payment, trip, vehicle, and location patterns.
+1. Clone or download this repository.
+2. Open `Data Analysis and Dashboard/NewYork Uber Trip Data Analysis.pbix` in **Power BI Desktop** (free, Windows).
+3. If prompted, update the source-data path to the dataset in the `Data/` folder.
+4. Refresh the report if required and resolve any data-source prompts.
+5. Explore the Overview Analysis, Time Analysis, and Trip Details pages using the available filters.
 
 ## 11. ⚠️ Limitations & Assumptions
 
-- The dashboard covers June 2024 only; findings may not generalize to other periods.
-- Booking amount represents the reported booking value, not necessarily Uber's net revenue or profit.
-- Dashboard percentages and averages depend on the underlying measure definitions.
-- Observed patterns do not establish causation.
-- Confirm the dataset source and redistribution permissions before publishing the raw data.
+- **Reporting period:** The overview shows June 2024, while some time-analysis visuals use a narrower date selection.
+- **Booking amount:** This is not equivalent to profit or net revenue because operating costs and other financial components are not established by the dashboard.
+- **Metric definitions:** Results depend on the underlying DAX measures, source data, and active filters.
+- **Interpretation:** Observed patterns do not establish their causes or prove that a particular operational change would improve performance.
+- **Data provenance:** Verify the original dataset source and redistribution permissions before publishing the data publicly.
